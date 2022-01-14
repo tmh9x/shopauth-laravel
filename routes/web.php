@@ -29,6 +29,8 @@ Route::get('/products', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('list',[ProductController::class,'show']);
+Route::group(['middleware' => 'auth'], function() {
+Route::get('list', [ProductController::class,'show']);
+});
 
 require __DIR__.'/auth.php';
