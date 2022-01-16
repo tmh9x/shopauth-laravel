@@ -10,6 +10,6 @@ class ProductController extends Controller
     function show()
     {
         $data= Product::all();
-        return view('list',['products'=>$data]);
+        return view('products',['products'=>$data]);
     }
 }

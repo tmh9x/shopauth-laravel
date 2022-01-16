@@ -4569,9 +4569,12 @@ function Dashboard(props) {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
             className: "p-6 bg-white border-b border-gray-200",
             children: ["You're logged in! ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
-              href: "/list",
-              children: "Click here"
-            }), " to see our products!"]
+              className: "font-bold text-blue-400",
+              href: "/products",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                children: "Click here "
+              })
+            }), "to see our products!"]
           })
         })
       })

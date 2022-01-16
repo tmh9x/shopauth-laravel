@@ -16,7 +16,7 @@
         <td>{{$product['name']}}</td>
         <td>{{$product['description']}}</td>
         <td>{{$product['price']}}</td>
-        <td><img src="{{$product['image']}}" width='85' height='85'/></td>
+        <td><img src="{{$product['image']}}" width='85' height='85'></td>
         <td>{{$product['created_at']}}</td>
         <td>{{$product['updated_at']}}</td>
         

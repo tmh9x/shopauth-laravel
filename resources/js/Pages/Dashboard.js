@@ -20,7 +20,13 @@ export default function Dashboard(props) {
                     <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                         <div className="p-6 bg-white border-b border-gray-200">
                             You're logged in! <br />
-                            <a href="/list">Click here</a> to see our products!
+                            <a
+                                className="font-bold text-blue-400"
+                                href="/products"
+                            >
+                                <span>Click here </span>
+                            </a>
+                            to see our products!
                         </div>
                     </div>
                 </div>

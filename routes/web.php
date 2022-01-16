@@ -25,12 +25,12 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/products', function () {
+Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::group(['middleware' => 'auth'], function() {
-Route::get('list', [ProductController::class,'show']);
+Route::get('products', [ProductController::class,'show']);
 });
 
 require __DIR__.'/auth.php';
